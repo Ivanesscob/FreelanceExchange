@@ -33,6 +33,7 @@
                     <Controls:HamburgerMenu.ItemsSource>
                         <Controls:HamburgerMenuItemCollection>
                             <Controls:HamburgerMenuIconItem Label="Главная" Tag="HomePage" Icon="Home" />
+                            <Controls:HamburgerMenuIconItem Label="Профиль" Tag="ProfilePage" Icon="Account" IsVisible="True"/>
                             <Controls:HamburgerMenuIconItem Label="Настройки" Tag="SettingsPage" Icon="Cog" />
                         </Controls:HamburgerMenuItemCollection>
                     </Controls:HamburgerMenu.ItemsSource>
@@ -41,7 +42,7 @@
                         <DataTemplate>
                             <Border Height="50" Padding="10" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Center">
                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
-                                    <iconPacks:PackIconMaterial Kind="{Binding Icon}" Width="24" Height="24" Margin="10,0,30,0"/>
+                                    <iconPacks:PackIconMaterial Kind="{Binding Icon}" Width="24" Height="24" Margin="5,0,30,0"/>
                                     <TextBlock Text="{Binding Label}" FontSize="16" VerticalAlignment="Center" />
                                 </StackPanel>
                             </Border>

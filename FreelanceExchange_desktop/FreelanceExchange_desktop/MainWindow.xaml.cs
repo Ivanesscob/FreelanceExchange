@@ -1,9 +1,14 @@
-﻿using MahApps.Metro.Controls;
+﻿using FreelanceExchange_desktop.Data;
+using MahApps.Metro.Controls;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Documents;
 
 namespace FreelanceExchange_desktop
 {
     public partial class MainWindow : MetroWindow
     {
+        public List<User> Users;
         //private bool _isVisibleAuth = true;
         //public bool IsVisibleAuth
         //{
@@ -29,8 +34,15 @@ namespace FreelanceExchange_desktop
         {
             InitializeComponent();
             DataContext = this;
-            OverlayFrame.Navigate(new Pages.Auth.Signin(OverlayFrame));
+            OverlayFrame.Navigate(new Pages.Auth.Signin(OverlayFrame, this));
             HamburgerMenu.ItemInvoked += HamburgerMenu_ItemInvoked;
+
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            Users = DatabaseCommands.GetUsers();
         }
 
         private void HamburgerMenu_ItemInvoked(object sender, HamburgerMenuItemInvokedEventArgs args)

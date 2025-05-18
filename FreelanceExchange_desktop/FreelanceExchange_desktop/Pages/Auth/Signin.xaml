@@ -18,8 +18,8 @@
         BorderBrush="#FFCCCCCC" BorderThickness="3" >
             <StackPanel>
                 <TextBlock Text="Вход" FontSize="30" Margin="0 0 0 10" HorizontalAlignment="Center" FontFamily="Segoe UI"/>
-                <TextBox Controls:TextBoxHelper.Watermark="Введите логин" Margin="5 5 5 10" BorderBrush="Black" />
-                <PasswordBox Controls:TextBoxHelper.Watermark="Введите пароль" Margin="5 5 5 10" BorderBrush="Black"/>
+                <TextBox Controls:TextBoxHelper.Watermark="Введите логин" Margin="5 5 5 10" BorderBrush="Black" Text="{Binding LoginText, Mode=TwoWay}"/>
+                <TextBox Controls:TextBoxHelper.Watermark="Введите пароль" Margin="5 5 5 10" BorderBrush="Black" Text="{Binding PasswordText, Mode=TwoWay}"/>
                 <Button Content="Войти" Margin="5 5 5 10" BorderBrush="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Command="{Binding SignInCommand}"/>
                 <Button Content="Нет аккаунта?" Command="{Binding NavigateToRegCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Foreground="Blue" Background="Transparent" BorderThickness="0" Cursor="Hand" />
             </StackPanel>
