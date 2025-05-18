@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ivane\OneDrive\Рабочий стол\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\
 FreelanceExchange_desktop
 none
 false
 DEBUG;TRACE
-C:\Users\ivane\OneDrive\Рабочий стол\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\App.xaml
-1219584333
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\App.xaml
+41967425237
 
-6-502434485
-13-1310406943
-MainWindow.xaml;
+11-2091106023
+581217626912
+MainWindow.xaml;Pages\Auth\Registration.xaml;Pages\Auth\Signin.xaml;Pages\Settings.xaml;
 
-True
+False
 
