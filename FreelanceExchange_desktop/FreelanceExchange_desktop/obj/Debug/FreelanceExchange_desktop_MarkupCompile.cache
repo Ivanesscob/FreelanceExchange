@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\App.xaml
-41967425237
+8-1536899409
 
-12-1306581663
+17653437170
 811415717388
-MainWindow.xaml;Pages\Auth\Registration.xaml;Pages\Auth\Signin.xaml;Pages\Settings.xaml;
+MainWindow.xaml;Pages\Auth\Registration.xaml;Pages\Auth\Signin.xaml;Pages\CreateTaskPage.xaml;Pages\HomePage.xaml;Pages\Settings.xaml;Pages\SuccesfulyCreateTask.xaml;Pages\UserProfilePage.xaml;
 
 False
 

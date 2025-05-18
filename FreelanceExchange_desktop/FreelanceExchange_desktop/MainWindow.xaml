@@ -5,8 +5,9 @@
                    xmlns:converters="clr-namespace:FreelanceExchange_desktop.Helpers.Converters"
                    xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-
-                   Title="MainWindow" Height="450" Width="800">
+                   MinHeight="600" MinWidth="800"
+                   Icon="/Pics/7556851.ico"
+                   Title="Биржа фриланса" Height="650" Width="800">
     <Window.Resources>
         <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </Window.Resources>
@@ -28,9 +29,10 @@
                     <Controls:HamburgerMenu.ItemsSource>
                         <Controls:HamburgerMenuItemCollection>
                             <Controls:HamburgerMenuIconItem Label="Главная" Tag="HomePage" Icon="Home" />
+                            <Controls:HamburgerMenuIconItem Label="Создать задание" Tag="CreateTask" Icon="Plus" IsVisible="{Binding IsCustomer}"/>
                             <Controls:HamburgerMenuIconItem Label="Профиль" Tag="ProfilePage" Icon="Account"/>
-                            <Controls:HamburgerMenuIconItem Label="Заявки" Tag="ProfilePage" Icon="Account"/>
-                            <Controls:HamburgerMenuIconItem Label="Настройки" Tag="SettingsPage" Icon="Cog" />
+                            <Controls:HamburgerMenuIconItem Label="Заявки" Tag="InBox" Icon="Inbox"/>
+                            <Controls:HamburgerMenuIconItem Label="Настройки" Tag="SettingsPage" Icon="Cog"/>
                         </Controls:HamburgerMenuItemCollection>
                     </Controls:HamburgerMenu.ItemsSource>
 

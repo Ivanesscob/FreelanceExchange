@@ -33,7 +33,7 @@ namespace FreelanceExchange_desktop.Pages
 
         private void Exit(object obj)
         {
-            
+            MainWindow.Close();
         }
     }
 }

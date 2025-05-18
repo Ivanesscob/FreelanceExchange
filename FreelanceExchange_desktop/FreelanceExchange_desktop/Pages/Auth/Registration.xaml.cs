@@ -53,6 +53,8 @@ namespace FreelanceExchange_desktop.Pages.Auth
             if (DatabaseCommands.IsUserUnique(NewUser) && !HasEmptyFields(NewUser))
             {
                 DatabaseCommands.AddUser(NewUser, SelectedRole);
+                NewUser.Roles.Add(SelectedRole);
+                _mainWindow.Users.Add(NewUser);
                 _frame.Navigate(new Signin(_frame, _mainWindow));
             }
             else

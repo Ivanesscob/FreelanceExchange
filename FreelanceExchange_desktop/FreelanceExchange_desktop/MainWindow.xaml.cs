@@ -1,15 +1,46 @@
 ﻿using FreelanceExchange_desktop.Data;
+using FreelanceExchange_desktop.Pages;
 using MahApps.Metro.Controls;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows;
-using System.Windows.Documents;
 
 namespace FreelanceExchange_desktop
 {
-    public partial class MainWindow : MetroWindow
+    public partial class MainWindow : MetroWindow, INotifyPropertyChanged
     {
         public List<User> Users;
         public User CurrentUser;
+        public List<Task> Tasks;
+
+        private bool isCustomer;
+        public bool IsCustomer
+        {
+            get => isCustomer;
+            set
+            {
+                if (isCustomer != value)
+                {
+                    isCustomer = value;
+                    OnPropertyChanged(nameof(IsCustomer));
+                }
+            }
+        }
+
+        private bool isfreelancer;
+        public bool Isfreelancer
+        {
+            get => isCustomer;
+            set
+            {
+                if (isCustomer != value)
+                {
+                    isCustomer = value;
+                    OnPropertyChanged(nameof(Isfreelancer));
+                }
+            }
+        }
+
         //private bool _isVisibleAuth = true;
         //public bool IsVisibleAuth
         //{
@@ -24,12 +55,12 @@ namespace FreelanceExchange_desktop
         //    }
         //}
 
-        //public event PropertyChangedEventHandler PropertyChanged;
-        //public void OnPropertyChanged(string prop = "")
-        //{
-        //    if (PropertyChanged != null)
-        //        PropertyChanged(this, new PropertyChangedEventArgs(prop));
-        //}
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged(string prop = "")
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
+        }
 
         public MainWindow()
         {
@@ -44,6 +75,7 @@ namespace FreelanceExchange_desktop
         private void LoadData()
         {
             Users = DatabaseCommands.GetUsers();
+            Tasks = DatabaseCommands.LoadTasksFromDb();
         }
 
         private void HamburgerMenu_ItemInvoked(object sender, HamburgerMenuItemInvokedEventArgs args)
@@ -53,8 +85,16 @@ namespace FreelanceExchange_desktop
                 switch (menuItem.Tag)
                 {
                     case "HomePage":
+                        MainFrame.Navigate(new HomePage(Tasks));
                         break;
                     case "SettingsPage":
+                        MainFrame.Navigate(new Settings(this));
+                        break;
+                    case "CreateTask":
+                        MainFrame.Navigate(new CreateTaskPage(this));
+                        break;
+                    case "ProfilePage":
+                        MainFrame.Navigate(new UserProfilePage(CurrentUser));
                         break;
                 }
             }

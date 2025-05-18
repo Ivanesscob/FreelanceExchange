@@ -35,6 +35,8 @@ namespace FreelanceExchange_desktop.Pages.Auth
             if (matchedUser != null)
             {
                 _mainWindow.CurrentUser = matchedUser;
+                if (_mainWindow.CurrentUser.Roles.First() == "customer") _mainWindow.IsCustomer = true;
+                if (_mainWindow.CurrentUser.Roles.First() == "freelancer") _mainWindow.IsCustomer = true;
                 _frame.Visibility = Visibility.Collapsed;
             }
             else
