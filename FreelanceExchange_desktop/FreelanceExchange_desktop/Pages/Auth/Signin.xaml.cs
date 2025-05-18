@@ -29,13 +29,17 @@ namespace FreelanceExchange_desktop.Pages.Auth
 
         private void SignIn(object obj)
         {
-            if (_mainWindow.Users.Any(a => a.Username == LoginText) && _mainWindow.Users.Any(a => a.Password == PasswordText))
+
+            var matchedUser = _mainWindow.Users.FirstOrDefault(u => u.Username == LoginText && u.Password == PasswordText);
+
+            if (matchedUser != null)
             {
+                _mainWindow.CurrentUser = matchedUser;
                 _frame.Visibility = Visibility.Collapsed;
             }
             else
             {
-                MessageBox.Show("Неправильный логин или пароль", "Ошибка авторизации", MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Неправильный логин или пароль", "Ошибка авторизации", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

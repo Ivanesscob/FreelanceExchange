@@ -9,6 +9,7 @@ namespace FreelanceExchange_desktop
     public partial class MainWindow : MetroWindow
     {
         public List<User> Users;
+        public User CurrentUser;
         //private bool _isVisibleAuth = true;
         //public bool IsVisibleAuth
         //{
@@ -52,10 +53,8 @@ namespace FreelanceExchange_desktop
                 switch (menuItem.Tag)
                 {
                     case "HomePage":
-                        
                         break;
                     case "SettingsPage":
-                        
                         break;
                 }
             }

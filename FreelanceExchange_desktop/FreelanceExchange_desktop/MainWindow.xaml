@@ -12,17 +12,12 @@
     </Window.Resources>
 
     <Grid>
-        <!-- Основной UI -->
         <Grid x:Name="MainContent">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="200"/>
-                    <!-- Меню слева -->
                     <ColumnDefinition Width="*"/>
-                    <!-- Основное содержимое -->
                 </Grid.ColumnDefinitions>
-
-                <!-- Меню -->
                 <Controls:HamburgerMenu x:Name="HamburgerMenu"
                         Grid.Column="0"
                         DisplayMode="CompactInline"
@@ -33,7 +28,8 @@
                     <Controls:HamburgerMenu.ItemsSource>
                         <Controls:HamburgerMenuItemCollection>
                             <Controls:HamburgerMenuIconItem Label="Главная" Tag="HomePage" Icon="Home" />
-                            <Controls:HamburgerMenuIconItem Label="Профиль" Tag="ProfilePage" Icon="Account" IsVisible="True"/>
+                            <Controls:HamburgerMenuIconItem Label="Профиль" Tag="ProfilePage" Icon="Account"/>
+                            <Controls:HamburgerMenuIconItem Label="Заявки" Tag="ProfilePage" Icon="Account"/>
                             <Controls:HamburgerMenuIconItem Label="Настройки" Tag="SettingsPage" Icon="Cog" />
                         </Controls:HamburgerMenuItemCollection>
                     </Controls:HamburgerMenu.ItemsSource>
@@ -49,8 +45,6 @@
                         </DataTemplate>
                     </Controls:HamburgerMenu.ItemTemplate>
                 </Controls:HamburgerMenu>
-
-                <!-- Контент -->
                 <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" />
             </Grid>
         </Grid>
