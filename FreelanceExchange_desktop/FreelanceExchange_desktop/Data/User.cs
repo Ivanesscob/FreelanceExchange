@@ -16,7 +16,7 @@ namespace FreelanceExchange_desktop.Data
         private string lastName;
         private string username;
         private string password;
-        private DateTime birthDate;
+        private DateTime birthDate = DateTime.Now;
         private DateTime registrationDate;
         private List<string> roles = new List<string>();
 

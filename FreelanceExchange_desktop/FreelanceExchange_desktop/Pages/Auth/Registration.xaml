@@ -3,7 +3,6 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:sys="clr-namespace:System;assembly=mscorlib"
       xmlns:local="clr-namespace:FreelanceExchange_desktop.Pages.Auth"
       xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
@@ -24,7 +23,7 @@
                 <TextBox Controls:TextBoxHelper.Watermark="Имя" Margin="5 5 5 10" BorderBrush="Black" Text="{Binding NewUser.FirstName, Mode=TwoWay}"/>
                 <TextBox Controls:TextBoxHelper.Watermark="Фамилия" Margin="5 5 5 10" BorderBrush="Black" Text="{Binding NewUser.LastName, Mode=TwoWay}"/>
                 <TextBox Controls:TextBoxHelper.Watermark="Почта" Margin="5 5 5 10" BorderBrush="Black" Text="{Binding NewUser.Email, Mode=TwoWay}"/>
-                <DatePicker Controls:TextBoxHelper.Watermark="Дата рождения" SelectedDate="{x:Static sys:DateTime.Now}" Margin="5 5 5 10" BorderBrush="Black" Background="White" Text="{Binding NewUser.BirthDate, Mode=TwoWay}"/>
+                <DatePicker Controls:TextBoxHelper.Watermark="Дата рождения" Margin="5 5 5 10" BorderBrush="Black" Background="White" Text="{Binding NewUser.BirthDate, Mode=TwoWay}"/>
                 <ComboBox Controls:TextBoxHelper.Watermark="Заказчик\Исполнитель" Margin="5 5 5 10" BorderBrush="Black" ItemsSource="{Binding Roles}" SelectedItem="{Binding SelectedRole, Mode=TwoWay}" />
                 <Button Content="Зарегистрироваться" Margin="5 5 5 10" BorderBrush="Black" Background="White" Command="{Binding RegCommand}"/>
                 <Button Content="Есть аккаунт? Войди" Command="{Binding NavigateToSignInCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Foreground="Blue" Background="Transparent" BorderThickness="0" Cursor="Hand" />
