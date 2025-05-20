@@ -24,20 +24,22 @@ namespace FreelanceExchange_desktop.Pages
 
         private void CreateTask(object obj)
         {
-            NewTask.CreatedAt = DateTime.Now;
-            NewTask.CreatorId = _mainWindow.CurrentUser.Id;
-            NewTask.StatusId = 1;
-            _mainWindow.Tasks.Add(NewTask);
-            DatabaseCommands.AddTaskToDatabase(NewTask);
-            _mainWindow.MainFrame.Navigate(new SuccesfulyCreateTask());
+            if (IsTaskValid(NewTask))
+            {
+                NewTask.CreatedAt = DateTime.Now;
+                NewTask.CreatorId = _mainWindow.CurrentUser.Id;
+                NewTask.StatusId = 1;
+                _mainWindow.Tasks.Add(NewTask);
+                DatabaseCommands.AddTaskToDatabase(NewTask);
+                _mainWindow.MainFrame.Navigate(new SuccesfulyCreateTask());
+            }
         }
 
         public bool IsTaskValid(Task newTask)
         {
             return !string.IsNullOrWhiteSpace(newTask.Title) &&
                    !string.IsNullOrWhiteSpace(newTask.Description) &&
-                   newTask.Budget > 0 &&
-                   newTask.StatusId > 0;
+                   newTask.Budget > 0;
         }
 
     }
