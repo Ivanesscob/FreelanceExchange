@@ -1,5 +1,6 @@
 ﻿using FreelanceExchange_desktop.Data;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Controls;
 
 namespace FreelanceExchange_desktop.Pages
@@ -9,8 +10,8 @@ namespace FreelanceExchange_desktop.Pages
     /// </summary>
     public partial class HomePage : Page
     {
-        public List<Task> Tasks { get; set; }
-        public HomePage(List<Task> tasks)
+        public ObservableCollection<Task> Tasks { get; set; }
+        public HomePage(ObservableCollection<Task> tasks)
         {
             InitializeComponent();
             DataContext = this;

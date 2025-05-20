@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -18,7 +19,7 @@ namespace FreelanceExchange_desktop.Data
         private string password;
         private DateTime birthDate = DateTime.Now;
         private DateTime registrationDate;
-        private List<string> roles = new List<string>();
+        private ObservableCollection<string> roles = new ObservableCollection<string>();
 
         public int Id
         {
@@ -68,7 +69,7 @@ namespace FreelanceExchange_desktop.Data
             set => SetField(ref registrationDate, value);
         }
 
-        public List<string> Roles
+        public ObservableCollection<string> Roles
         {
             get => roles;
             set => SetField(ref roles, value);

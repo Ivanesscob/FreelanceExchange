@@ -2,16 +2,18 @@
 using FreelanceExchange_desktop.Pages;
 using MahApps.Metro.Controls;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows;
 
 namespace FreelanceExchange_desktop
 {
     public partial class MainWindow : MetroWindow, INotifyPropertyChanged
     {
-        public List<User> Users;
+        public ObservableCollection<User> Users;
         public User CurrentUser;
-        public List<Task> Tasks;
+        public ObservableCollection<Task> Tasks;
 
         private bool isCustomer;
         public bool IsCustomer
@@ -95,6 +97,10 @@ namespace FreelanceExchange_desktop
                         break;
                     case "ProfilePage":
                         MainFrame.Navigate(new UserProfilePage(CurrentUser));
+                        break;
+                    case "InBox":
+                        if (IsCustomer) MainFrame.Navigate(new CustomerRequestsPage(Tasks.Where(a => a.CreatorId == CurrentUser.Id).ToList(), this));
+                        //else MainFrame.Navigate(new CustomerRequestsPage();
                         break;
                 }
             }

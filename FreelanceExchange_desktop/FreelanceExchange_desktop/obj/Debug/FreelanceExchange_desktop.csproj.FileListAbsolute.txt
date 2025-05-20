@@ -154,3 +154,7 @@ C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Deb
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\SuccesfulyCreateTask.baml
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\UserProfilePage.g.cs
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\UserProfilePage.baml
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\CustomerRequestsPage.g.cs
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\CustomerRequestsPage.baml
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\FreeRequestPage.g.cs
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\FreeRequestPage.baml

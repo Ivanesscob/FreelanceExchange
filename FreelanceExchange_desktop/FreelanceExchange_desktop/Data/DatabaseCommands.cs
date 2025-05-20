@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -10,9 +11,9 @@ namespace FreelanceExchange_desktop.Data
     {
         const string connectionString = "Server=31.128.42.195;Database=freelance_platform;Uid=userVanya;Pwd=Vanya20066002;";
 
-        public static List<User> GetUsers()
+        public static ObservableCollection<User> GetUsers()
         {
-            var users = new List<User>();
+            var users = new ObservableCollection<User>();
             var userMap = new Dictionary<int, User>();
 
             MySqlConnection connection = null;
@@ -60,7 +61,7 @@ namespace FreelanceExchange_desktop.Data
                             Password = reader["password"].ToString(),
                             BirthDate = Convert.ToDateTime(reader["birth_date"]),
                             RegistrationDate = Convert.ToDateTime(reader["registration_date"]),
-                            Roles = new List<string>()
+                            Roles = new ObservableCollection<string>()
                         };
 
                         userMap[id] = user;
@@ -120,7 +121,7 @@ namespace FreelanceExchange_desktop.Data
 
                 try
                 {
-                    // 1. Добавляем пользователя
+
                     string insertUserQuery = @"
                 INSERT INTO Users 
                 (email, first_name, last_name, username, password, birth_date, registration_date)
@@ -175,44 +176,71 @@ namespace FreelanceExchange_desktop.Data
                 }
             }
         }
-        public static List<Task> LoadTasksFromDb()
+        public static ObservableCollection<Task> LoadTasksFromDb()
         {
-            List<Task> Tasks = new List<Task>();
-            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            conn.Open();
-
-            string query = @"
-            SELECT id, title, description, creator_id, created_at, budget, status_id, image_data
-            FROM Tasks";
-
-            // Создаём команду
-            MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
-            MySql.Data.MySqlClient.MySqlDataReader reader = cmd.ExecuteReader();
-
-            while (reader.Read())
+            ObservableCollection<Task> Tasks = new ObservableCollection<Task>();
+            using (var conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString))
             {
-                Task task = new Task
+                conn.Open();
+
+                string query = @"
+            SELECT 
+                t.id AS task_id, t.title, t.description, t.creator_id, 
+                t.created_at, t.budget, t.status_id, t.image_data,
+                r.id AS response_id, r.freelancer_id, r.message, 
+                r.proposed_price, r.created_at AS response_created_at, r.is_selected
+            FROM Tasks t
+            LEFT JOIN Responses r ON t.id = r.task_id";
+
+                var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+                var reader = cmd.ExecuteReader();
+
+                Dictionary<int, Task> taskMap = new Dictionary<int, Task>();
+
+                while (reader.Read())
                 {
-                    Id = reader.GetInt32(reader.GetOrdinal("id")),
-                    Title = reader.IsDBNull(reader.GetOrdinal("title")) ? "" : reader.GetString(reader.GetOrdinal("title")),
-                    Description = reader.IsDBNull(reader.GetOrdinal("description")) ? "" : reader.GetString(reader.GetOrdinal("description")),
-                    CreatorId = reader.GetInt32(reader.GetOrdinal("creator_id")),
-                    CreatedAt = reader.GetDateTime(reader.GetOrdinal("created_at")),
-                    Budget = reader.GetDecimal(reader.GetOrdinal("budget")),
-                    StatusId = reader.GetInt32(reader.GetOrdinal("status_id"))
-                    //ImageData = reader.IsDBNull(reader.GetOrdinal("image_data")) ? null : (byte[])reader["image_data"]
-                };
+                    int taskId = reader.GetInt32(reader.GetOrdinal("task_id"));
+                    if (!taskMap.TryGetValue(taskId, out Task task))
+                    {
+                        task = new Task
+                        {
+                            Id = taskId,
+                            Title = reader.IsDBNull(reader.GetOrdinal("title")) ? "" : reader.GetString(reader.GetOrdinal("title")),
+                            Description = reader.IsDBNull(reader.GetOrdinal("description")) ? "" : reader.GetString(reader.GetOrdinal("description")),
+                            CreatorId = reader.GetInt32(reader.GetOrdinal("creator_id")),
+                            CreatedAt = reader.GetDateTime(reader.GetOrdinal("created_at")),
+                            Budget = reader.GetDecimal(reader.GetOrdinal("budget")),
+                            StatusId = reader.GetInt32(reader.GetOrdinal("status_id")),
+                            //ImageData = reader.IsDBNull(reader.GetOrdinal("image_data")) ? null : (byte[])reader["image_data"],
+                            Responses = new List<Response>()
+                        };
+                        taskMap[taskId] = task;
+                        Tasks.Add(task);
+                    }
 
-                Tasks.Add(task);
+                    if (!reader.IsDBNull(reader.GetOrdinal("response_id")))
+                    {
+                        Response response = new Response
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("response_id")),
+                            TaskId = taskId,
+                            FreelancerId = reader.GetInt32(reader.GetOrdinal("freelancer_id")),
+                            Message = reader.IsDBNull(reader.GetOrdinal("message")) ? "" : reader.GetString(reader.GetOrdinal("message")),
+                            ProposedPrice = reader.GetDecimal(reader.GetOrdinal("proposed_price")),
+                            CreatedAt = reader.GetDateTime(reader.GetOrdinal("response_created_at")),
+                            IsSelected = reader.GetBoolean(reader.GetOrdinal("is_selected"))
+                        };
+                        task.Responses.Add(response);
+                    }
+                }
+
+                reader.Close();
             }
-
-            reader.Close();
-            cmd.Dispose();
-            conn.Close();
-            conn.Dispose();
 
             return Tasks;
         }
+
+
 
         public static void AddTaskToDatabase(Task task)
         {
@@ -236,6 +264,43 @@ namespace FreelanceExchange_desktop.Data
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public static ObservableCollection<Task> GetTasksByCustomerId(int customerId)
+        {
+            var tasks = new ObservableCollection<Task>();
+
+            string query = "SELECT id, title, description, creator_id, created_at, budget, status_id FROM Tasks WHERE creator_id = @CustomerId";
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                using (var command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@CustomerId", customerId);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var task = new Task
+                            {
+                                Id = reader.GetInt32("id"),
+                                Title = reader.GetString("title"),
+                                Description = reader.GetString("description"),
+                                CreatorId = reader.GetInt32("creator_id"),
+                                CreatedAt = reader.GetDateTime("created_at"),
+                                Budget = reader.GetDecimal("budget"),
+                                StatusId = reader.GetInt32("status_id")
+                            };
+
+                            tasks.Add(task);
+                        }
+                    }
+                }
+            }
+
+            return tasks;
         }
     }
 }

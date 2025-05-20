@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -20,7 +21,7 @@ namespace FreelanceExchange_desktop.Pages.Auth
         public User NewUser { get; set; } = new User();
         public ICommand RegCommand { get; }
         public ICommand NavigateToSignInCommand { get; }
-        public List<string> Roles { get; set; } = new List<string> { "freelancer", "customer" };
+        public ObservableCollection<string> Roles { get; set; } = new ObservableCollection<string> { "freelancer", "customer" };
         private string selectedRole;
         public string SelectedRole
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Windows.Media.Imaging;
@@ -14,6 +15,7 @@ namespace FreelanceExchange_desktop.Data
         public DateTime CreatedAt { get; set; }
         public decimal Budget { get; set; }
         public int StatusId { get; set; }
+        public List<Response> Responses { get; set; } = new List<Response>();
 
         //private byte[] imageData;
         //public byte[] ImageData
@@ -27,7 +29,7 @@ namespace FreelanceExchange_desktop.Data
         //    }
         //}
 
-        
+
 
 
         public event PropertyChangedEventHandler PropertyChanged;
