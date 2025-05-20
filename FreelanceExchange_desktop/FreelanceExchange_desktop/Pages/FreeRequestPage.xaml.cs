@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FreelanceExchange_desktop.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,12 @@ namespace FreelanceExchange_desktop.Pages
     /// </summary>
     public partial class FreeRequestPage : Page
     {
-        public FreeRequestPage()
+        public List<Response> UserTasks { get; set; }
+        public Response SelectedTask { get; set; }
+        public ICommand AddCommand { get; set; }
+        public ICommand DeleteCommand { get; set; }
+        private MainWindow _mainWindow;
+        public FreeRequestPage(List<Response> userResponses, MainWindow mainWindow)
         {
             InitializeComponent();
         }

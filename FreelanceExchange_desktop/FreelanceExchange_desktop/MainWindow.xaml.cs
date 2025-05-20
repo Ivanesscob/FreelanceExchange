@@ -14,6 +14,7 @@ namespace FreelanceExchange_desktop
         public ObservableCollection<User> Users;
         public User CurrentUser;
         public ObservableCollection<Task> Tasks;
+        public ObservableCollection<Response> Responses;
 
         private bool isCustomer;
         public bool IsCustomer
@@ -78,6 +79,7 @@ namespace FreelanceExchange_desktop
         {
             Users = DatabaseCommands.GetUsers();
             Tasks = DatabaseCommands.LoadTasksFromDb();
+            Responses = DatabaseCommands.LoadResponsesFromDb();
         }
 
         private void HamburgerMenu_ItemInvoked(object sender, HamburgerMenuItemInvokedEventArgs args)
@@ -100,7 +102,7 @@ namespace FreelanceExchange_desktop
                         break;
                     case "InBox":
                         if (IsCustomer) MainFrame.Navigate(new CustomerRequestsPage(Tasks.Where(a => a.CreatorId == CurrentUser.Id).ToList(), this));
-                        //else MainFrame.Navigate(new CustomerRequestsPage();
+                        else MainFrame.Navigate(new FreeRequestPage(Responses.Where(a => a.FreelancerId == CurrentUser.Id).ToList(), this));
                         break;
                 }
             }

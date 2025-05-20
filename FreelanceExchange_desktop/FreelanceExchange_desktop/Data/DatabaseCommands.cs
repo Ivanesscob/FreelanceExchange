@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace FreelanceExchange_desktop.Data
 {
@@ -302,5 +300,87 @@ namespace FreelanceExchange_desktop.Data
 
             return tasks;
         }
+
+        public static void DeleteTaskFromDb(Task task)
+        {
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "DELETE FROM Tasks WHERE id = @TaskId";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TaskId", task.Id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static ObservableCollection<Response> LoadResponsesFromDb()
+        {
+            ObservableCollection<Response> responses = new ObservableCollection<Response>();
+
+            using (var connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = @"
+            SELECT 
+                Responses.id, 
+                Responses.task_id, 
+                Responses.freelancer_id, 
+                Responses.message, 
+                Responses.proposed_price, 
+                Responses.created_at, 
+                Responses.is_selected,
+
+                Tasks.id AS task_id,
+                Tasks.title,
+                Tasks.description,
+                Tasks.creator_id,
+                Tasks.created_at AS task_created_at,
+                Tasks.budget,
+                Tasks.status_id
+
+            FROM Responses
+            INNER JOIN Tasks ON Responses.task_id = Tasks.id";
+
+                using (var command = new MySql.Data.MySqlClient.MySqlCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var task = new Task
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("task_id")),
+                            Title = reader.IsDBNull(reader.GetOrdinal("title")) ? "" : reader.GetString(reader.GetOrdinal("title")),
+                            Description = reader.IsDBNull(reader.GetOrdinal("description")) ? "" : reader.GetString(reader.GetOrdinal("description")),
+                            CreatorId = reader.GetInt32(reader.GetOrdinal("creator_id")),
+                            CreatedAt = reader.GetDateTime(reader.GetOrdinal("task_created_at")),
+                            Budget = reader.GetDecimal(reader.GetOrdinal("budget")),
+                            StatusId = reader.GetInt32(reader.GetOrdinal("status_id"))
+                        };
+
+                        var response = new Response
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("id")),
+                            TaskId = reader.GetInt32(reader.GetOrdinal("task_id")),
+                            FreelancerId = reader.GetInt32(reader.GetOrdinal("freelancer_id")),
+                            Message = reader.IsDBNull(reader.GetOrdinal("message")) ? "" : reader.GetString(reader.GetOrdinal("message")),
+                            ProposedPrice = reader.GetDecimal(reader.GetOrdinal("proposed_price")),
+                            CreatedAt = reader.GetDateTime(reader.GetOrdinal("created_at")),
+                            IsSelected = reader.GetBoolean(reader.GetOrdinal("is_selected")),
+                            Tasks = new List<Task> { task }
+                        };
+
+                        responses.Add(response);
+                    }
+                }
+            }
+
+            return responses;
+        }
+
     }
 }
