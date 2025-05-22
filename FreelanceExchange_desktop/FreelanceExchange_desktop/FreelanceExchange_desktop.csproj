@@ -259,6 +259,7 @@
     <Compile Include="Data\Task.cs" />
     <Compile Include="Data\User.cs" />
     <Compile Include="Helpers\Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Helpers\Converters\BoolToSelectedTextConverter.cs" />
     <Compile Include="Helpers\DelegateCommand.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

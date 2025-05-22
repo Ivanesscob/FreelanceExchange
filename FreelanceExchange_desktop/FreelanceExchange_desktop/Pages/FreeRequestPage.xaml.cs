@@ -21,14 +21,23 @@ namespace FreelanceExchange_desktop.Pages
     /// </summary>
     public partial class FreeRequestPage : Page
     {
-        public List<Response> UserTasks { get; set; }
-        public Response SelectedTask { get; set; }
+        public List<Response> UserResponses { get; set; }
+        public Response SelectedResponse { get; set; }
         public ICommand AddCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
         private MainWindow _mainWindow;
+
         public FreeRequestPage(List<Response> userResponses, MainWindow mainWindow)
         {
             InitializeComponent();
+            DataContext = this;
+            _mainWindow = mainWindow;
+            UserResponses = userResponses;
+        }
+
+        public void Edit(object obj, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

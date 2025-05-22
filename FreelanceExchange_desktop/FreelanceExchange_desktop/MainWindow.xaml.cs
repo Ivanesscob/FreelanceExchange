@@ -1,11 +1,9 @@
 ﻿using FreelanceExchange_desktop.Data;
 using FreelanceExchange_desktop.Pages;
 using MahApps.Metro.Controls;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
-using System.Windows;
 
 namespace FreelanceExchange_desktop
 {

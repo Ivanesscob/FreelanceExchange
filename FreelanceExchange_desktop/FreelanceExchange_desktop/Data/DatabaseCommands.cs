@@ -371,16 +371,14 @@ namespace FreelanceExchange_desktop.Data
                             ProposedPrice = reader.GetDecimal(reader.GetOrdinal("proposed_price")),
                             CreatedAt = reader.GetDateTime(reader.GetOrdinal("created_at")),
                             IsSelected = reader.GetBoolean(reader.GetOrdinal("is_selected")),
-                            Tasks = new List<Task> { task }
+                            Task = task
                         };
 
                         responses.Add(response);
                     }
                 }
             }
-
             return responses;
         }
-
     }
 }

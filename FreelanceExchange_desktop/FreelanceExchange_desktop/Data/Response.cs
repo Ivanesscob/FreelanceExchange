@@ -12,7 +12,6 @@ namespace FreelanceExchange_desktop.Data
         public decimal ProposedPrice { get; set; }
         public DateTime CreatedAt { get; set; }
         public bool IsSelected { get; set; }
-        public List<Task> Tasks { get; set; }
+        public Task Task { get; set; }
     }
-
 }
