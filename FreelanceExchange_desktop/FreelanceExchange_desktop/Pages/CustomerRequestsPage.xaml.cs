@@ -29,7 +29,8 @@ namespace FreelanceExchange_desktop.Pages
 
         public void Edit (object sender, MouseButtonEventArgs e)
         {
-
+            //ProxyWindow proxyWindow = new ProxyWindow(0);
+            //proxyWindow.Show();
         }
 
         public void Delete(object obj)

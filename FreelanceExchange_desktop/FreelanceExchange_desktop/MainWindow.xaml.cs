@@ -31,12 +31,12 @@ namespace FreelanceExchange_desktop
         private bool isfreelancer;
         public bool Isfreelancer
         {
-            get => isCustomer;
+            get => isfreelancer;
             set
             {
-                if (isCustomer != value)
+                if (isfreelancer != value)
                 {
-                    isCustomer = value;
+                    isfreelancer = value;
                     OnPropertyChanged(nameof(Isfreelancer));
                 }
             }
@@ -75,9 +75,7 @@ namespace FreelanceExchange_desktop
 
         private void LoadData()
         {
-            Users = DatabaseCommands.GetUsers();
-            Tasks = DatabaseCommands.LoadTasksFromDb();
-            Responses = DatabaseCommands.LoadResponsesFromDb();
+            
         }
 
         private void HamburgerMenu_ItemInvoked(object sender, HamburgerMenuItemInvokedEventArgs args)
@@ -87,7 +85,10 @@ namespace FreelanceExchange_desktop
                 switch (menuItem.Tag)
                 {
                     case "HomePage":
-                        MainFrame.Navigate(new HomePage(Tasks));
+                        Tasks = DatabaseCommands.LoadTasksFromDb();
+                        Responses = DatabaseCommands.LoadResponsesFromDb();
+                        Users = DatabaseCommands.GetUsers();
+                        MainFrame.Navigate(new HomePage(Tasks, this));
                         break;
                     case "SettingsPage":
                         MainFrame.Navigate(new Settings(this));
@@ -99,6 +100,8 @@ namespace FreelanceExchange_desktop
                         MainFrame.Navigate(new UserProfilePage(CurrentUser));
                         break;
                     case "InBox":
+                        Tasks = DatabaseCommands.LoadTasksFromDb();
+                        Responses = DatabaseCommands.LoadResponsesFromDb();
                         if (IsCustomer) MainFrame.Navigate(new CustomerRequestsPage(Tasks.Where(a => a.CreatorId == CurrentUser.Id).ToList(), this));
                         else MainFrame.Navigate(new FreeRequestPage(Responses.Where(a => a.FreelancerId == CurrentUser.Id).ToList(), this));
                         break;

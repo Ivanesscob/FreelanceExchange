@@ -1,0 +1,16 @@
+﻿<metro:MetroWindow x:Class="FreelanceExchange_desktop.Pages.ProxyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:FreelanceExchange_desktop.Pages"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Биржа фриланса"
+        Icon="/Pics/7556851.ico"
+        Height="450" Width="800">
+    <Grid>
+        <ContentControl Content="{Binding MainFrame}"></ContentControl>
+    </Grid>
+</metro:MetroWindow>

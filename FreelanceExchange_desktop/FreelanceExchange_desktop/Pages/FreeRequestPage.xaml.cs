@@ -1,18 +1,9 @@
 ﻿using FreelanceExchange_desktop.Data;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FreelanceExchange_desktop.Pages
 {
@@ -33,11 +24,22 @@ namespace FreelanceExchange_desktop.Pages
             DataContext = this;
             _mainWindow = mainWindow;
             UserResponses = userResponses;
+            DeleteCommand = new DelegateCommand(Delete);
         }
 
         public void Edit(object obj, MouseButtonEventArgs e)
         {
+            
+        }
 
+        private void Delete(object obj)
+        {
+            if (MessageBox.Show("Подтверждение удаления", "Вы уверены?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                DatabaseCommands.DeleteResponse(SelectedResponse);
+                _mainWindow.Responses.Remove(SelectedResponse);
+                _mainWindow.MainFrame.Navigate(new FreeRequestPage(_mainWindow.Responses.Where(a => a.FreelancerId == _mainWindow.CurrentUser.Id).ToList(), _mainWindow));
+            }
         }
     }
 }

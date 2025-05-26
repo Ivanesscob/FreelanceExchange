@@ -380,5 +380,52 @@ namespace FreelanceExchange_desktop.Data
             }
             return responses;
         }
+
+        public static void InsertResponse(Response response)
+        {
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = @"
+            INSERT INTO Responses 
+            (task_id, freelancer_id, message, proposed_price, created_at, is_selected)
+            VALUES
+            (@TaskId, @FreelancerId, @Message, @ProposedPrice, @CreatedAt, @IsSelected)";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TaskId", response.TaskId);
+                    cmd.Parameters.AddWithValue("@FreelancerId", response.FreelancerId);
+                    cmd.Parameters.AddWithValue("@Message", response.Message);
+                    cmd.Parameters.AddWithValue("@ProposedPrice", response.ProposedPrice);
+                    cmd.Parameters.AddWithValue("@CreatedAt", response.CreatedAt);
+                    cmd.Parameters.AddWithValue("@IsSelected", response.IsSelected);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static void DeleteResponse(Response response)
+        {
+            using (var conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = @"DELETE FROM Responses 
+                         WHERE task_id = @TaskId AND freelancer_id = @FreelancerId";
+
+                using (var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TaskId", response.TaskId);
+                    cmd.Parameters.AddWithValue("@FreelancerId", response.FreelancerId);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
     }
 }

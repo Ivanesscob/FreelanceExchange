@@ -158,3 +158,11 @@ C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Deb
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Freelanc.73172157.Up2Date
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\FreelanceExchange_desktop.exe
 C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\FreelanceExchange_desktop.pdb
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\ProxyWindow.g.cs
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\ProxyWindow.baml
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\FullRequestPage.g.cs
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\ResponsesForCusomer.g.cs
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\FullRequestPage.baml
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\Pages\ResponsesForCusomer.baml
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\ApplyDialog.g.cs
+C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\obj\Debug\ApplyDialog.baml

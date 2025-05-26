@@ -7,6 +7,7 @@
                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
                    MinHeight="600" MinWidth="800"
                    Icon="/Pics/7556851.ico"
+                   WindowStartupLocation="CenterScreen"
                    Title="Биржа фриланса" Height="650" Width="800">
     <Window.Resources>
         <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>

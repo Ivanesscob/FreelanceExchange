@@ -246,6 +246,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ApplyDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -254,7 +258,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ApplyDialog.xaml.cs">
+      <DependentUpon>ApplyDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Data\DatabaseCommands.cs" />
+    <Compile Include="Data\DataClass.cs" />
     <Compile Include="Data\Response.cs" />
     <Compile Include="Data\Task.cs" />
     <Compile Include="Data\User.cs" />
@@ -285,7 +293,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\FullRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ProxyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ResponsesForCusomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -318,8 +338,17 @@
     <Compile Include="Pages\FreeRequestPage.xaml.cs">
       <DependentUpon>FreeRequestPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\FullRequestPage.xaml.cs">
+      <DependentUpon>FullRequestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProxyWindow.xaml.cs">
+      <DependentUpon>ProxyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ResponsesForCusomer.xaml.cs">
+      <DependentUpon>ResponsesForCusomer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>

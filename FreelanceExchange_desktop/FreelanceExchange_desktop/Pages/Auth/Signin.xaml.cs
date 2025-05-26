@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using FreelanceExchange_desktop.Data;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -35,6 +36,7 @@ namespace FreelanceExchange_desktop.Pages.Auth
             if (matchedUser != null)
             {
                 _mainWindow.CurrentUser = matchedUser;
+                if (_mainWindow.CurrentUser.Roles.First() == "freelancer") _mainWindow.Isfreelancer = true;
                 if (_mainWindow.CurrentUser.Roles.First() == "customer") _mainWindow.IsCustomer = true;
                 _frame.Visibility = Visibility.Collapsed;
             }
