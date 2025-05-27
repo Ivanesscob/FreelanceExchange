@@ -50,10 +50,6 @@
                        Text="{Binding SelectedTask.Budget, StringFormat='Бюджет: {0:C}'}" 
                        Margin="10,5"/>
 
-            <TextBlock Grid.Row="4" Grid.Column="1" 
-                       Text="{Binding SelectedTask.StatusId, StringFormat='Статус ID: {0}'}" 
-                       Margin="10,5"/>
-
             <Button Grid.Row="6" Grid.Column="1" 
                     Content="Подать заявку" 
                     Margin="10,20,0,0" Padding="10"

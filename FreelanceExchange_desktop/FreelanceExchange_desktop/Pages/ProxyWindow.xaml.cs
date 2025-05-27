@@ -2,6 +2,7 @@
 using FreelanceExchange_desktop.Data;
 using System.Windows;
 using System.Windows.Controls;
+using ZstdSharp.Unsafe;
 
 namespace FreelanceExchange_desktop.Pages
 {
@@ -23,7 +24,7 @@ namespace FreelanceExchange_desktop.Pages
             switch (a)
             {
                 case 0:
-                    MainFrame.Navigate(new ResponsesForCusomer());
+                    MainFrame.Navigate(new ResponsesForCusomer(M, selectedTask));
                     break;
                 case 1:
                     MainFrame.Navigate(new FullRequestPage(selectedTask, M));

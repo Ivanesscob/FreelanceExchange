@@ -24,7 +24,7 @@ namespace FreelanceExchange_desktop.Pages
             DataContext = this;
             _mainWindow = mainWindow;
             UserResponses = userResponses;
-            DeleteCommand = new DelegateCommand(Delete);
+            DeleteCommand = new DelegateCommand(Delete, _ => SelectedResponse != null);
         }
 
         public void Edit(object obj, MouseButtonEventArgs e)
@@ -34,7 +34,7 @@ namespace FreelanceExchange_desktop.Pages
 
         private void Delete(object obj)
         {
-            if (MessageBox.Show("Подтверждение удаления", "Вы уверены?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show("Подтверждение удаления", "Вы уверены?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes && SelectedResponse.IsSelected == false)
             {
                 DatabaseCommands.DeleteResponse(SelectedResponse);
                 _mainWindow.Responses.Remove(SelectedResponse);

@@ -70,13 +70,13 @@ namespace FreelanceExchange_desktop
             OverlayFrame.Navigate(new Pages.Auth.Signin(OverlayFrame, this));
             HamburgerMenu.ItemInvoked += HamburgerMenu_ItemInvoked;
 
-            LoadData();
+            //LoadData();
         }
 
-        private void LoadData()
-        {
+        //private void LoadData()
+        //{
             
-        }
+        //}
 
         private void HamburgerMenu_ItemInvoked(object sender, HamburgerMenuItemInvokedEventArgs args)
         {

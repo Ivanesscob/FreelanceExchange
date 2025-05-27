@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows;
 
 namespace FreelanceExchange_desktop.Data
 {
@@ -424,6 +426,53 @@ namespace FreelanceExchange_desktop.Data
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public static bool SelectResponseForTask(List<Response> responses, Response selectedResponse, Task task)
+        {
+            if (responses.Any(r => r.IsSelected))
+            {
+                MessageBox.Show("Задание уже назначено", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (var transaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        string updateResponseQuery = "UPDATE Responses SET is_selected = 1 WHERE Id = @ResponseId";
+                        using (var cmd = new MySqlCommand(updateResponseQuery, conn, transaction))
+                        {
+                            cmd.Parameters.AddWithValue("@ResponseId", selectedResponse.Id);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        string updateTaskQuery = "UPDATE Tasks SET status_id = 2 WHERE Id = @TaskId";
+                        using (var cmd = new MySqlCommand(updateTaskQuery, conn, transaction))
+                        {
+                            cmd.Parameters.AddWithValue("@TaskId", task.Id);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        MessageBox.Show("Ошибка при обновлении: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return false;
+                    }
+                }
+
+                conn.Close();
+            }
+
+            selectedResponse.IsSelected = true;
+            return true;
         }
 
 
