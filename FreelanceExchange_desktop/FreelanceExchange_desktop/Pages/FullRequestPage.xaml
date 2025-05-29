@@ -29,9 +29,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!--<Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" 
+            <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" 
                    Width="200" Height="150" Margin="10"
-                   Source="{Binding SelectedTask.Image}" />-->
+                   Source="{Binding SelectedTask.Image}" />
 
             <TextBlock Grid.Row="0" Grid.Column="1" 
                        Text="{Binding SelectedTask.Title}" 

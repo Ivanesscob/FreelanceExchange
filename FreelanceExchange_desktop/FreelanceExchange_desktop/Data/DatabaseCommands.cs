@@ -184,13 +184,13 @@ namespace FreelanceExchange_desktop.Data
                 conn.Open();
 
                 string query = @"
-            SELECT 
-                t.id AS task_id, t.title, t.description, t.creator_id, 
-                t.created_at, t.budget, t.status_id, t.image_data,
-                r.id AS response_id, r.freelancer_id, r.message, 
-                r.proposed_price, r.created_at AS response_created_at, r.is_selected
-            FROM Tasks t
-            LEFT JOIN Responses r ON t.id = r.task_id";
+    SELECT 
+        t.id AS task_id, t.title, t.description, t.creator_id, 
+        t.created_at, t.budget, t.status_id, t.pic,
+        r.id AS response_id, r.freelancer_id, r.message, 
+        r.proposed_price, r.created_at AS response_created_at, r.is_selected
+    FROM Tasks t
+    LEFT JOIN Responses r ON t.id = r.task_id";
 
                 var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
                 var reader = cmd.ExecuteReader();
@@ -211,7 +211,7 @@ namespace FreelanceExchange_desktop.Data
                             CreatedAt = reader.GetDateTime(reader.GetOrdinal("created_at")),
                             Budget = reader.GetDecimal(reader.GetOrdinal("budget")),
                             StatusId = reader.GetInt32(reader.GetOrdinal("status_id")),
-                            //ImageData = reader.IsDBNull(reader.GetOrdinal("image_data")) ? null : (byte[])reader["image_data"],
+                            Image = reader.IsDBNull(reader.GetOrdinal("pic")) ? @"C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\Pics\UserPics\ok.png" : @"C:\FreelanceExchange\FreelanceExchange_desktop\FreelanceExchange_desktop\Pics\UserPics\" + reader.GetString(reader.GetOrdinal("pic")),
                             Responses = new List<Response>()
                         };
                         taskMap[taskId] = task;
@@ -242,6 +242,7 @@ namespace FreelanceExchange_desktop.Data
 
 
 
+
         public static void AddTaskToDatabase(Task task)
         {
             using (var connection = new MySqlConnection(connectionString))
@@ -249,8 +250,8 @@ namespace FreelanceExchange_desktop.Data
                 connection.Open();
 
                 string query = @"
-            INSERT INTO Tasks (title, description, creator_id, created_at, budget, status_id)
-            VALUES (@Title, @Description, @CreatorId, @CreatedAt, @Budget, @StatusId)";
+        INSERT INTO Tasks (title, description, creator_id, created_at, budget, status_id, pic)
+        VALUES (@Title, @Description, @CreatorId, @CreatedAt, @Budget, @StatusId, @Pic)";
 
                 using (var cmd = new MySqlCommand(query, connection))
                 {
@@ -261,10 +262,13 @@ namespace FreelanceExchange_desktop.Data
                     cmd.Parameters.AddWithValue("@Budget", task.Budget);
                     cmd.Parameters.AddWithValue("@StatusId", task.StatusId);
 
+                    cmd.Parameters.AddWithValue("@Pic", task.Image ?? (object)DBNull.Value);
+
                     cmd.ExecuteNonQuery();
                 }
             }
         }
+
 
         public static ObservableCollection<Task> GetTasksByCustomerId(int customerId)
         {

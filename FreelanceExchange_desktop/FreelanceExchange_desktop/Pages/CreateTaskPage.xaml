@@ -52,6 +52,17 @@
                          Height="30"
                          Margin="0,0,0,12"/>
 
+                <TextBlock Text="Изображение:" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                    <Button Content="Загрузить изображение"
+            Command="{Binding UploadImageCommand}"
+            Height="30"
+            Width="160"
+            Margin="0,0,10,0"/>
+                    <TextBlock Text="{Binding NewTask.Image}" VerticalAlignment="Center" Foreground="Gray"/>
+                </StackPanel>
+
+
                 <Button Content="Создать задание"
                         Command="{Binding CreateTaskCommand }"
                         Width="200"

@@ -16,6 +16,7 @@ namespace FreelanceExchange_desktop.Data
         public decimal Budget { get; set; }
         public int StatusId { get; set; }
         public List<Response> Responses { get; set; } = new List<Response>();
+        public string Image { get; set; }
 
         //private byte[] imageData;
         //public byte[] ImageData
