@@ -27,10 +27,17 @@ namespace FreelanceExchange_desktop.Data
         //        OnPropertyChanged(nameof(ImageData));
         //        OnPropertyChanged(nameof(Image));
         //    }
-        //}
+        //} 
 
-
-
+        public string GetStatusText()
+        {
+            return StatusId switch
+            {
+                1 => "Открыто",
+                2 => "В работе",
+                _ => "Неизвестный статус"
+            };
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName) =>

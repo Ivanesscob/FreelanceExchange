@@ -10,7 +10,7 @@ namespace FreelanceExchange_desktop.Data
         public static ObservableCollection<User> Users;
         public static User CurrentUser;
         public static ObservableCollection<Task> Tasks;
-        public static ObservableCollection<Response> Responses;
+        public static List<Response> Responses;
 
         private static bool isCustomer;
         public static bool IsCustomer

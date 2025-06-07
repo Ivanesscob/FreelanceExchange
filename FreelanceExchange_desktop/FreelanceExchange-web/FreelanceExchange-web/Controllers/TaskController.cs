@@ -28,7 +28,7 @@ namespace FreelanceExchange_web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(string title, string description, decimal budget, DateTime deadline, string category)
+        public IActionResult Create(string title, string description, decimal budget)
         {
             // Проверяем, авторизован ли пользователь
             if (DataClass.CurrentUser == null)
@@ -48,9 +48,16 @@ namespace FreelanceExchange_web.Controllers
                 return View();
             }
 
-            // TODO: Добавить создание задания в базу данных
+            FreelanceExchange_desktop.Data.Task newTask = new FreelanceExchange_desktop.Data.Task();
+            newTask.CreatedAt = DateTime.Now;
+            newTask.CreatorId = DataClass.CurrentUser.Id;
+            newTask.StatusId = 1;
+            newTask.Title = title;
+            newTask.Description = description;
+            newTask.Budget = budget;
+            DatabaseCommands.AddTaskToDatabase(newTask);
 
-            return RedirectToAction("List");
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Details(int id)
@@ -80,5 +87,16 @@ namespace FreelanceExchange_web.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public IActionResult AcceptResponse(int responseId, int taskId)
+        {
+            var task = DataClass.Tasks.FirstOrDefault(t => t.Id == taskId);
+            var response = task?.Responses.FirstOrDefault(r => r.Id == responseId);
+
+            DatabaseCommands.SelectResponseForTask(task.Responses, response, task);
+
+            return RedirectToAction("Index", "Home");
+        }
     }
-} 
+}

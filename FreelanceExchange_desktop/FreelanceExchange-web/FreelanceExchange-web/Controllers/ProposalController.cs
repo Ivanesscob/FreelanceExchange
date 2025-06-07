@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using FreelanceExchange_desktop.Data;
+using System.Linq;
 
 namespace FreelanceExchange_web.Controllers
 {
@@ -6,6 +8,24 @@ namespace FreelanceExchange_web.Controllers
     {
         public IActionResult Index()
         {
+            // Проверяем, авторизован ли пользователь
+            if (DataClass.CurrentUser == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            // Если пользователь - заказчик, показываем его задания
+            if (DataClass.CurrentUser.Roles.First() == "customer")
+            {
+                var userTasks = DataClass.Tasks.Where(t => t.CreatorId == DataClass.CurrentUser.Id).ToList();
+                ViewBag.Tasks = userTasks;
+            }
+            // Для исполнителя пока пустая страница
+            else
+            {
+                ViewBag.Tasks = new List<FreelanceExchange_desktop.Data.Task>();
+            }
+
             return View();
         }
 

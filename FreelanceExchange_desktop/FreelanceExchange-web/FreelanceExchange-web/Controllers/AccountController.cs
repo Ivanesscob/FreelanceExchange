@@ -19,7 +19,7 @@ namespace FreelanceExchange_web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password, bool rememberMe)
+        public IActionResult Login(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
@@ -119,7 +119,7 @@ namespace FreelanceExchange_web.Controllers
 
         public IActionResult Logout()
         {
-            // TODO: Реализовать логику выхода
+            DataClass.CurrentUser = null;
             return RedirectToAction("Index", "Home");
         }
     }

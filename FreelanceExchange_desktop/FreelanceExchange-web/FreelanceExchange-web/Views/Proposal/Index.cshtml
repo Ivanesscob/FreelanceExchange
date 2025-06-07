@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Заявки";
+}
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+    </div>
+
+    @if (FreelanceExchange_desktop.Data.DataClass.CurrentUser.Roles.First() == "customer")
+    {
+        if (ViewBag.Tasks != null && ViewBag.Tasks.Count > 0)
+        {
+            <div class="list-group">
+                @foreach (var task in ViewBag.Tasks)
+                {
+                    <div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">@task.Title</h5>
+                            <small class="text-muted">@task.CreatedAt.ToShortDateString()</small>
+                        </div>
+                        <p class="mb-1">@(task.Description?.Length > 150 ? task.Description.Substring(0, 150) + "..." : task.Description)</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <small class="text-muted me-3">Бюджет: @task.Budget ₽</small>
+                                <small class="text-muted me-3">Статус: @task.GetStatusText()</small>
+                                <small class="text-muted">Откликов: @task.Responses.Count</small>
+                            </div>
+                            <div>
+                                <a href="@Url.Action("Details", "Task", new { id = task.Id })" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                У вас пока нет созданных заданий.
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-info">
+            Страница заявок для исполнителей находится в разработке.
+        </div>
+    }
+</div> 

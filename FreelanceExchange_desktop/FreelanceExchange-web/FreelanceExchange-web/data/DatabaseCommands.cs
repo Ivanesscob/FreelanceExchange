@@ -317,9 +317,9 @@ namespace FreelanceExchange_desktop.Data
             }
         }
 
-        public static ObservableCollection<Response> LoadResponsesFromDb()
+        public static List<Response> LoadResponsesFromDb()
         {
-            ObservableCollection<Response> responses = new ObservableCollection<Response>();
+            List<Response> responses = new List<Response>();
 
             using (var connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString))
             {
