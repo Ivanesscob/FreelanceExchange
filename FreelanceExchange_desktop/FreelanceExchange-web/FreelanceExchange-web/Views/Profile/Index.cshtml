@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">Профиль пользователя</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">Имя пользователя:</div>
+                        <div class="col-md-8">@FreelanceExchange_desktop.Data.DataClass.CurrentUser.Username</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">Email:</div>
+                        <div class="col-md-8">@FreelanceExchange_desktop.Data.DataClass.CurrentUser.Email</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">Роль:</div>
+                        <div class="col-md-8">@FreelanceExchange_desktop.Data.DataClass.CurrentUser.Roles.First()</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">Дата рождения:</div>
+                        <div class="col-md-8">@FreelanceExchange_desktop.Data.DataClass.CurrentUser.BirthDate.ToShortDateString()</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">Дата регистрации:</div>
+                        <div class="col-md-8">@FreelanceExchange_desktop.Data.DataClass.CurrentUser.RegistrationDate.ToShortDateString()</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

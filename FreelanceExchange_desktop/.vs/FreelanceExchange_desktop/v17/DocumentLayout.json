@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\auth\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\auth\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\auth\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\auth\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\auth\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\auth\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\data\\databasecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\data\\databasecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange_desktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,11 +43,7 @@
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\data\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\data\\databasecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\data\\databasecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange_desktop\\pages\\fullrequestpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\fullrequestpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\fullrequestpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -102,20 +114,12 @@
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\helpers\\converters\\booltoselectedtextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\auth\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\auth\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\applydialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\applydialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\applydialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\applydialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\auth\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\auth\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\helpers\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -136,10 +140,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\auth\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|solutionrelative:freelanceexchange_desktop\\pages\\auth\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0166FE7-14B3-4503-9987-60C19D15A73A}|FreelanceExchange_desktop\\FreelanceExchange_desktop.csproj|C:\\FreelanceExchange\\FreelanceExchange_desktop\\freelanceexchange_desktop\\pages\\userprofilepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
@@ -177,7 +177,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 3,
+              "Title": "DatabaseCommands.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAewJIAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T17:12:20.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Response.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\Response.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Response.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T17:29:10.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataClass.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DataClass.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\DataClass.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DataClass.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\DataClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:35:01.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Task.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\Task.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Task.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:26:33.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\User.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\User.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\User.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T16:59:18.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Signin.xaml",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-18T11:42:12.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\MainWindow.xaml.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:34:23.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "FullRequestPage.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml.cs",
@@ -189,43 +274,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateTaskPage.xaml",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
+              "DocumentIndex": 2,
+              "Title": "Registration.xaml",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-18T20:21:25.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FullRequestPage.xaml",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-26T20:30:51.746Z",
+              "WhenOpened": "2025-05-18T11:40:37.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseCommands.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\DatabaseCommands.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Registration.xaml.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:12:20.498Z",
+              "WhenOpened": "2025-05-18T12:08:14.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Signin.xaml.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAnwCsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T12:08:17.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "HomePage.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\HomePage.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\HomePage.xaml",
@@ -236,108 +323,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Response.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Response.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\Response.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Response.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\Response.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T17:29:10.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataClass.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DataClass.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\DataClass.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\DataClass.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\DataClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T22:35:01.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Task.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\Task.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\Task.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:26:33.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\User.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Data\\User.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Data\\User.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Data\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:59:18.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Signin.xaml",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml",
+              "DocumentIndex": 10,
+              "Title": "FullRequestPage.xaml",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\FullRequestPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-18T11:42:12.158Z",
+              "WhenOpened": "2025-05-26T20:30:51.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateTaskPage.xaml",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-18T20:21:25.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\MainWindow.xaml.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowEUAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:34:23.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:30:06.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateTaskPage.xaml.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCAAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:42:41.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Properties\\Resources.resx",
@@ -349,14 +358,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Registration.xaml",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-18T11:40:37.573Z"
+              "DocumentIndex": 17,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\HomePage.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:30:06.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateTaskPage.xaml.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
+              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\CreateTaskPage.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:42:41.178Z"
             },
             {
               "$type": "Document",
@@ -379,8 +401,7 @@
               "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\SuccesfulyCreateTask.xaml",
               "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\SuccesfulyCreateTask.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-18T21:45:18.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T21:45:18.623Z"
             },
             {
               "$type": "Document",
@@ -396,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "CustomerRequestsPage.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CustomerRequestsPage.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\CustomerRequestsPage.xaml.cs",
@@ -408,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "FreeRequestPage.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FreeRequestPage.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\FreeRequestPage.xaml",
@@ -419,20 +440,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "FrameworkTemplate.cs",
               "DocumentMoniker": "C:\\Users\\ivane\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\ivane\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs",
-              "ToolTip": "C:\\Users\\ivane\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\Users\\ivane\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs [Read Only]",
+              "ToolTip": "C:\\Users\\ivane\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs",
+              "RelativeToolTip": "..\\..\\Users\\ivane\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs",
               "ViewState": "AgIAAAEDAAAAAAAAAAAowBoDAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T19:17:46.301Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2025-05-29T19:17:46.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "FreeRequestPage.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\FreeRequestPage.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\FreeRequestPage.xaml.cs",
@@ -444,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ImagePathConverter.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Helpers\\Converters\\ImagePathConverter.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Helpers\\Converters\\ImagePathConverter.cs",
@@ -456,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\MainWindow.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\MainWindow.xaml",
@@ -467,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "ProxyWindow.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\ProxyWindow.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\ProxyWindow.xaml",
@@ -478,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "ResponsesForCusomer.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\ResponsesForCusomer.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\ResponsesForCusomer.xaml.cs",
@@ -490,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "BoolToSelectedTextConverter.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Helpers\\Converters\\BoolToSelectedTextConverter.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Helpers\\Converters\\BoolToSelectedTextConverter.cs",
@@ -502,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ApplyDialog.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\ApplyDialog.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\ApplyDialog.xaml",
@@ -513,19 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Signin.xaml.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Signin.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAnwCYAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T12:08:17.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ApplyDialog.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\ApplyDialog.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\ApplyDialog.xaml.cs",
@@ -537,19 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Registration.xaml.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
-              "RelativeToolTip": "FreelanceExchange_desktop\\Pages\\Auth\\Registration.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA8wDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T12:08:14.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "CustomerRequestsPage.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\CustomerRequestsPage.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\CustomerRequestsPage.xaml",
@@ -560,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ResponsesForCusomer.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\ResponsesForCusomer.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\ResponsesForCusomer.xaml",
@@ -571,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "ProxyWindow.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\ProxyWindow.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\ProxyWindow.xaml.cs",
@@ -583,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "BoolToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Helpers\\Converters\\BoolToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Helpers\\Converters\\BoolToVisibilityConverter.cs",
@@ -595,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "DelegateCommand.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Helpers\\DelegateCommand.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Helpers\\DelegateCommand.cs",
@@ -607,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "UserProfilePage.xaml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\UserProfilePage.xaml",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\UserProfilePage.xaml",
@@ -618,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Settings.xaml.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange_desktop\\Pages\\Settings.xaml.cs",
               "RelativeDocumentMoniker": "FreelanceExchange_desktop\\Pages\\Settings.xaml.cs",

@@ -1,0 +1,93 @@
+@{
+    ViewData["Title"] = "Мои задания";
+}
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs mb-4">
+        <li class="nav-item">
+            <a class="nav-link active" href="#active" data-bs-toggle="tab">Активные</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#inProgress" data-bs-toggle="tab">В работе</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#completed" data-bs-toggle="tab">Завершенные</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="active">
+            <div class="list-group">
+                <!-- Здесь будет список активных заданий -->
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Активное задание</h5>
+                        <small class="text-muted">Опубликовано: 2 дня назад</small>
+                    </div>
+                    <p class="mb-1">Описание активного задания...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Бюджет: 5000 ₽</small>
+                        <div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Редактировать</a>
+                            <a href="#" class="btn btn-sm btn-outline-danger">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="inProgress">
+            <div class="list-group">
+                <!-- Здесь будет список заданий в работе -->
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Задание в работе</h5>
+                        <small class="text-muted">Начато: 1 день назад</small>
+                    </div>
+                    <p class="mb-1">Описание задания в работе...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Бюджет: 8000 ₽</small>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Просмотр</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="completed">
+            <div class="list-group">
+                <!-- Здесь будет список завершенных заданий -->
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Завершенное задание</h5>
+                        <small class="text-muted">Завершено: 5 дней назад</small>
+                    </div>
+                    <p class="mb-1">Описание завершенного задания...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Бюджет: 10000 ₽</small>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Просмотр</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Активация вкладок при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            var triggerTabList = [].slice.call(document.querySelectorAll('.nav-tabs a'))
+            triggerTabList.forEach(function(triggerEl) {
+                var tabTrigger = new bootstrap.Tab(triggerEl)
+                triggerEl.addEventListener('click', function(event) {
+                    event.preventDefault()
+                    tabTrigger.show()
+                })
+            })
+        })
+    </script>
+} 

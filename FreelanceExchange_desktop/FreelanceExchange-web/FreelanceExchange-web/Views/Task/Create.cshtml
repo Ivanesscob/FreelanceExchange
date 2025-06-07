@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Создать задание";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">@ViewData["Title"]</h2>
+                    <form asp-action="Create" method="post">
+                        <div class="form-group mb-3">
+                            <label for="title">Название задания</label>
+                            <input type="text" class="form-control" id="title" name="title" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="description">Описание задания</label>
+                            <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="budget">Бюджет</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="budget" name="budget" min="0" step="0.01" required>
+                                <span class="input-group-text">₽</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="deadline">Срок выполнения</label>
+                            <input type="date" class="form-control" id="deadline" name="deadline" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="category">Категория</label>
+                            <select class="form-select" id="category" name="category" required>
+                                <option value="">Выберите категорию</option>
+                                <option value="development">Разработка</option>
+                                <option value="design">Дизайн</option>
+                                <option value="marketing">Маркетинг</option>
+                                <option value="writing">Копирайтинг</option>
+                            </select>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Создать задание</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

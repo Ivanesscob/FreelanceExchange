@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "Задания";
+}
+
+<div class="container">
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @ViewBag.Error
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row mb-4">
+        <div class="col">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+        @if (FreelanceExchange_desktop.Data.DataClass.CurrentUser != null && 
+             FreelanceExchange_desktop.Data.DataClass.CurrentUser.Roles.First() == "customer")
+        {
+            <div class="col-auto">
+                <a asp-action="Create" class="btn btn-primary">Создать задание</a>
+            </div>
+        }
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Фильтры</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Категория</label>
+                            <select class="form-select" id="category" name="category">
+                                <option value="">Все категории</option>
+                                <option value="development">Разработка</option>
+                                <option value="design">Дизайн</option>
+                                <option value="marketing">Маркетинг</option>
+                                <option value="writing">Копирайтинг</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="budgetMin" class="form-label">Бюджет от</label>
+                            <input type="number" class="form-control" id="budgetMin" name="budgetMin" min="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="budgetMax" class="form-label">Бюджет до</label>
+                            <input type="number" class="form-control" id="budgetMax" name="budgetMax" min="0">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Применить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="list-group">
+                <!-- Здесь будет список заданий -->
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Пример задания</h5>
+                        <small class="text-muted">3 дня назад</small>
+                    </div>
+                    <p class="mb-1">Краткое описание задания...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Бюджет: 5000 ₽</small>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

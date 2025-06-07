@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Детали задания";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">@ViewBag.Task.Title</h2>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h5>Описание</h5>
+                        <p>@ViewBag.Task.Description</p>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5>Детали задания</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Бюджет:</strong> @ViewBag.Task.Budget ₽</li>
+                                <li><strong>Дата создания:</strong> @ViewBag.Task.CreatedAt.ToShortDateString()</li>
+                                <li><strong>Статус:</strong> @ViewBag.Task.StatusId</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    @if (ViewBag.Task.Responses != null && ViewBag.Task.Responses.Count > 0)
+                    {
+                        <div class="mb-4">
+                            <h5>Отклики (@ViewBag.Task.Responses.Count)</h5>
+                            <div class="list-group">
+                                @foreach (var response in ViewBag.Task.Responses)
+                                {
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Предложение: @response.ProposedPrice ₽</h6>
+                                            <small class="text-muted">@response.CreatedAt.ToShortDateString()</small>
+                                        </div>
+                                        <p class="mb-1">@response.Message</p>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
