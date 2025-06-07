@@ -9,10 +9,10 @@ namespace FreelanceExchange_desktop
 {
     public partial class MainWindow : MetroWindow, INotifyPropertyChanged
     {
-        public ObservableCollection<User> Users;
-        public User CurrentUser;
-        public ObservableCollection<Task> Tasks;
-        public ObservableCollection<Response> Responses;
+            public ObservableCollection<User> Users;
+            public User CurrentUser;
+            public ObservableCollection<Task> Tasks;
+            public ObservableCollection<Response> Responses;
 
         private bool isCustomer;
         public bool IsCustomer
