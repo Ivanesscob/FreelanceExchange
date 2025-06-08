@@ -1,5 +1,7 @@
 @{
     ViewData["Title"] = "Детали задания";
+    bool isTaskOwner = FreelanceExchange_desktop.Data.DataClass.CurrentUser != null && 
+                      FreelanceExchange_desktop.Data.DataClass.CurrentUser.Id == ViewBag.Task.CreatorId;
 }
 
 <div class="container">
@@ -22,12 +24,11 @@
                                 <li><strong>Бюджет:</strong> @ViewBag.Task.Budget ₽</li>
                                 <li><strong>Дата создания:</strong> @ViewBag.Task.CreatedAt.ToShortDateString()</li>
                                 <li><strong>Статус:</strong> @ViewBag.Task.GetStatusText()</li>
-                                <li><strong>Количество откликов:</strong> @ViewBag.Task.Responses.Count</li>
                             </ul>
                         </div>
                     </div>
 
-                    @if (ViewBag.Task.Responses != null && ViewBag.Task.Responses.Count > 0)
+                    @if (isTaskOwner && ViewBag.Task.Responses != null && ViewBag.Task.Responses.Count > 0)
                     {
                         <div class="mb-4">
                             <h5>Отклики (@ViewBag.Task.Responses.Count)</h5>
@@ -40,9 +41,7 @@
                                             <small class="text-muted">@response.CreatedAt.ToShortDateString()</small>
                                         </div>
                                         <p class="mb-1">@response.Message</p>
-                                        @if (FreelanceExchange_desktop.Data.DataClass.CurrentUser != null && 
-                                             FreelanceExchange_desktop.Data.DataClass.CurrentUser.Roles.First() == "customer" &&
-                                             ViewBag.Task.StatusId == 1)
+                                        @if (ViewBag.Task.StatusId == 1)
                                         {
                                             <div class="mt-2">
                                                 <form asp-controller="Task" asp-action="AcceptResponse" method="post" style="display: inline;">
@@ -55,12 +54,6 @@
                                     </div>
                                 }
                             </div>
-                        </div>
-                    }
-                    else
-                    {
-                        <div class="alert alert-info">
-                            Пока нет откликов на это задание.
                         </div>
                     }
                 </div>

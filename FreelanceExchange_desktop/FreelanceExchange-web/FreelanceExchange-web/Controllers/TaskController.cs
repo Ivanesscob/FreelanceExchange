@@ -68,6 +68,16 @@ namespace FreelanceExchange_web.Controllers
                 return NotFound();
             }
 
+            // Проверяем, является ли текущий пользователь заказчиком этого задания
+            bool isTaskOwner = DataClass.CurrentUser != null && 
+                              DataClass.CurrentUser.Id == task.CreatorId;
+
+            // Если пользователь не авторизован или не является заказчиком, очищаем список откликов
+            if (!isTaskOwner)
+            {
+                task.Responses = new List<Response>();
+            }
+
             ViewBag.Task = task;
             return View();
         }
