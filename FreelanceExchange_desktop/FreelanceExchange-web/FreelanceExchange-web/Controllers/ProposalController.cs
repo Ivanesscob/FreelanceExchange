@@ -63,5 +63,20 @@ namespace FreelanceExchange_web.Controllers
             DatabaseCommands.DeleteTaskFromDb(task);
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpPost]
+        public IActionResult DeleteResponse(int responseId)
+        {
+            var response = DataClass.Tasks
+                .SelectMany(t => t.Responses)
+                .FirstOrDefault(r => r.Id == responseId);
+
+            if (response != null && !response.IsSelected)
+            {
+                DatabaseCommands.DeleteResponse(response);
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
     }
 } 

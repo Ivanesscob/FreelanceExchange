@@ -3,46 +3,98 @@
 }
 
 <div class="container">
-    <div class="row mb-4">
-        <div class="col">
-            <h2>Последние задания</h2>
-        </div>
-    </div>
+    <h2 class="mb-4">@ViewData["Title"]</h2>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="list-group">
-                @if (ViewBag.Tasks != null && ViewBag.Tasks.Count > 0)
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <form asp-action="Index" method="get" class="d-flex gap-2">
+                <input type="text" name="searchQuery" value="@ViewBag.SearchQuery" 
+                       class="form-control" placeholder="Поиск по названию задания...">
+                <input type="hidden" name="status" value="@ViewBag.CurrentStatus">
+                <input type="hidden" name="sortBy" value="@ViewBag.SortBy">
+                <button type="submit" class="btn btn-primary">Поиск</button>
+                @if (!string.IsNullOrEmpty(ViewBag.SearchQuery))
                 {
-                    foreach (var task in ViewBag.Tasks)
-                    {
-                        <div class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">@task.Title</h5>
-                                <small class="text-muted">@task.CreatedAt.ToShortDateString()</small>
-                            </div>
-                            <p class="mb-1">@(task.Description?.Length > 150 ? task.Description.Substring(0, 150) + "..." : task.Description)</p>
-                            <div class="d-flex justify-content-between align-items-center mt-2">
-                                <div>
-                                    <small class="text-muted me-3">Бюджет: @task.Budget ₽</small>
-                                    <small class="text-muted">Статус: @task.GetStatusText()</small>
-                                    <small class="text-muted">Откликов: @task.Responses.Count</small>
-                                </div>
-                                <div>
-                                    <a href="@Url.Action("Details", "Task", new { id = task.Id })" class="btn btn-sm btn-outline-primary">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    }
+                    <a asp-action="Index" asp-route-status="@ViewBag.CurrentStatus" 
+                       asp-route-sortBy="@ViewBag.SortBy"
+                       class="btn btn-outline-secondary">Сбросить</a>
                 }
-                else
-                {
-                    <div class="alert alert-info">
-                        Заданий пока нет
-                    </div>
-                }
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex justify-content-end gap-2">
+                <div class="btn-group" role="group">
+                    <a asp-action="Index" asp-route-searchQuery="@ViewBag.SearchQuery" 
+                       asp-route-status="@ViewBag.CurrentStatus"
+                       asp-route-sortBy="@(ViewBag.SortBy == "name" ? "name_desc" : "name")"
+                       class="btn @(ViewBag.SortBy.StartsWith("name") ? "btn-primary" : "btn-outline-primary")">
+                        По названию @(ViewBag.SortBy == "name" ? "↑" : "↓")
+                    </a>
+                    <a asp-action="Index" asp-route-searchQuery="@ViewBag.SearchQuery" 
+                       asp-route-status="@ViewBag.CurrentStatus"
+                       asp-route-sortBy="@(ViewBag.SortBy == "date" ? "date_asc" : "date")"
+                       class="btn @(ViewBag.SortBy.StartsWith("date") ? "btn-primary" : "btn-outline-primary")">
+                        По дате @(ViewBag.SortBy == "date" ? "↓" : "↑")
+                    </a>
+                </div>
+                <div class="btn-group" role="group">
+                    <a asp-action="Index" asp-route-searchQuery="@ViewBag.SearchQuery" asp-route-sortBy="@ViewBag.SortBy" 
+                       class="btn @(ViewBag.CurrentStatus == null ? "btn-primary" : "btn-outline-primary")">
+                        Все задания
+                    </a>
+                    <a asp-action="Index" asp-route-status="Открыто" asp-route-searchQuery="@ViewBag.SearchQuery" 
+                       asp-route-sortBy="@ViewBag.SortBy"
+                       class="btn @(ViewBag.CurrentStatus == "Открыто" ? "btn-primary" : "btn-outline-primary")">
+                        Открытые
+                    </a>
+                    <a asp-action="Index" asp-route-status="В работе" asp-route-searchQuery="@ViewBag.SearchQuery" 
+                       asp-route-sortBy="@ViewBag.SortBy"
+                       class="btn @(ViewBag.CurrentStatus == "В работе" ? "btn-primary" : "btn-outline-primary")">
+                        В работе
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+
+    @if (ViewBag.Tasks != null && ViewBag.Tasks.Count > 0)
+    {
+        <div class="list-group">
+            @foreach (var task in ViewBag.Tasks)
+            {
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">@task.Title</h5>
+                            <p class="mb-1">@task.Description</p>
+                            <small class="text-muted">
+                                Создано: @task.CreatedAt.ToShortDateString() | 
+                                Бюджет: @task.Budget ₽ | 
+                                Статус: @task.GetStatusText() | 
+                                Откликов: @task.Responses.Count
+                            </small>
+                        </div>
+                        <div>
+                            <a asp-controller="Task" asp-action="Details" asp-route-id="@task.Id" 
+                               class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            @if (!string.IsNullOrEmpty(ViewBag.SearchQuery))
+            {
+                <text>Заданий по запросу "@ViewBag.SearchQuery" не найдено.</text>
+            }
+            else
+            {
+                <text>Заданий не найдено.</text>
+            }
+        </div>
+    }
 </div>
 

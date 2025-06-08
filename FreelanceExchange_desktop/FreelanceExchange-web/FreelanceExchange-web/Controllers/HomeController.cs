@@ -14,12 +14,47 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string status = null, string searchQuery = null, string sortBy = "date")
     {
         DataClass.Tasks = DatabaseCommands.LoadTasksFromDb();
         DataClass.Responses = DatabaseCommands.LoadResponsesFromDb();
         DataClass.Users = DatabaseCommands.GetUsers();
-        ViewBag.Tasks = DataClass.Tasks;
+
+        // Фильтрация по статусу, поиску и сортировка
+        var filteredTasks = DataClass.Tasks;
+        
+        // Применяем поиск по названию, если указан
+        if (!string.IsNullOrEmpty(searchQuery))
+        {
+            filteredTasks = new System.Collections.ObjectModel.ObservableCollection<FreelanceExchange_desktop.Data.Task>(
+                filteredTasks.Where(t => t.Title.ToLower().Contains(searchQuery.ToLower()))
+            );
+        }
+
+        // Применяем фильтр по статусу
+        if (!string.IsNullOrEmpty(status))
+        {
+            filteredTasks = new System.Collections.ObjectModel.ObservableCollection<FreelanceExchange_desktop.Data.Task>(
+                filteredTasks.Where(t => t.GetStatusText().ToLower() == status.ToLower())
+            );
+        }
+
+        // Сортировка
+        filteredTasks = new System.Collections.ObjectModel.ObservableCollection<FreelanceExchange_desktop.Data.Task>(
+            sortBy switch
+            {
+                "name" => filteredTasks.OrderBy(t => t.Title).ToList(),
+                "name_desc" => filteredTasks.OrderByDescending(t => t.Title).ToList(),
+                "date" => filteredTasks.OrderByDescending(t => t.CreatedAt).ToList(),
+                "date_asc" => filteredTasks.OrderBy(t => t.CreatedAt).ToList(),
+                _ => filteredTasks.OrderByDescending(t => t.CreatedAt).ToList()
+            }
+        );
+
+        ViewBag.Tasks = filteredTasks;
+        ViewBag.CurrentStatus = status;
+        ViewBag.SearchQuery = searchQuery;
+        ViewBag.SortBy = sortBy;
         return View();
     }
 
