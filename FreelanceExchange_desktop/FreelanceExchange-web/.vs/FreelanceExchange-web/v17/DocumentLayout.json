@@ -134,8 +134,7 @@
               "RelativeToolTip": "FreelanceExchange-web\\Views\\Task\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T13:25:47.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T13:25:47.461Z"
             },
             {
               "$type": "Document",
@@ -195,8 +194,7 @@
               "RelativeToolTip": "FreelanceExchange-web\\Controllers\\ProposalController.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAcwEYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T12:54:32.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T12:54:32.265Z"
             },
             {
               "$type": "Document",
@@ -244,8 +242,7 @@
               "RelativeToolTip": "FreelanceExchange-web\\data\\DataClass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T12:27:06.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T12:27:06.237Z"
             },
             {
               "$type": "Document",
@@ -267,7 +264,7 @@
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\HomeController.cs",
               "RelativeToolTip": "FreelanceExchange-web\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBMAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T12:32:54.869Z",
               "EditorCaption": ""
