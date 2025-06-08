@@ -13,7 +13,11 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
         <a asp-controller="Home" asp-action="Index">Главная</a>
-        <a asp-controller="Task" asp-action="Create">Создать задание</a>
+        @if (FreelanceExchange_desktop.Data.DataClass.CurrentUser != null && 
+             FreelanceExchange_desktop.Data.DataClass.CurrentUser.Roles.First() == "customer")
+        {
+            <a asp-controller="Task" asp-action="Create">Создать задание</a>
+        }
         <a asp-controller="Profile" asp-action="Index">Профиль</a>
         <a asp-controller="Proposal" asp-action="Index">Заявки</a>
 

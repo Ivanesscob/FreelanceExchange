@@ -2,6 +2,8 @@
     ViewData["Title"] = "Детали задания";
     bool isTaskOwner = FreelanceExchange_desktop.Data.DataClass.CurrentUser != null && 
                       FreelanceExchange_desktop.Data.DataClass.CurrentUser.Id == ViewBag.Task.CreatorId;
+    bool isFreelancer = FreelanceExchange_desktop.Data.DataClass.CurrentUser != null && 
+                       FreelanceExchange_desktop.Data.DataClass.CurrentUser.Roles.First() == "freelancer";
 }
 
 <div class="container">
@@ -27,6 +29,13 @@
                             </ul>
                         </div>
                     </div>
+
+                    @if (isFreelancer && ViewBag.Task.StatusId == 1)
+                    {
+                        <div class="mb-4">
+                            <a asp-controller="Response" asp-action="Create" asp-route-taskId="@ViewBag.Task.Id" class="btn btn-primary">Оставить отклик</a>
+                        </div>
+                    }
 
                     @if (isTaskOwner && ViewBag.Task.Responses != null && ViewBag.Task.Responses.Count > 0)
                     {

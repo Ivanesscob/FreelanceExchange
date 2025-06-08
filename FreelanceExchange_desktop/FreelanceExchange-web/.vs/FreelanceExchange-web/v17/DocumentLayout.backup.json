@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\controllers\\proposalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\controllers\\proposalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\views\\proposal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\views\\proposal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\controllers\\responsecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\controllers\\responsecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\data\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\data\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\controllers\\proposalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\controllers\\proposalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|c:\\freelanceexchange\\freelanceexchange_desktop\\freelanceexchange-web\\freelanceexchange-web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{83DDE673-DE95-4EAF-B367-D091A44EF374}|FreelanceExchange-web\\FreelanceExchange-web.csproj|solutionrelative:freelanceexchange-web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -106,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,19 +122,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Program.cs",
-              "RelativeDocumentMoniker": "FreelanceExchange-web\\Program.cs",
-              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Program.cs",
-              "RelativeToolTip": "FreelanceExchange-web\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAMwAsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T15:31:41.282Z"
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Proposal\\Index.cshtml",
+              "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Proposal\\Index.cshtml",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Proposal\\Index.cshtml",
+              "RelativeToolTip": "FreelanceExchange-web\\Views\\Proposal\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T13:09:35.095Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
+              "Title": "ResponseController.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\ResponseController.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\ResponseController.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\ResponseController.cs",
+              "RelativeToolTip": "FreelanceExchange-web\\Controllers\\ResponseController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:59:56.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "List.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Task\\List.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Task\\List.cshtml",
@@ -138,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Models\\Role.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Models\\Role.cs",
@@ -150,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\data\\Response.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\data\\Response.cs",
@@ -162,19 +184,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ProposalController.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\ProposalController.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\ProposalController.cs",
               "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\ProposalController.cs",
               "RelativeToolTip": "FreelanceExchange-web\\Controllers\\ProposalController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAnwBkAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T12:54:32.265Z"
+              "WhenOpened": "2025-06-07T12:54:32.265Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\ProfileController.cs",
@@ -186,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "DatabaseCommands.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\data\\DatabaseCommands.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\data\\DatabaseCommands.cs",
@@ -198,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\TaskController.cs",
@@ -211,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "DataClass.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\data\\DataClass.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\data\\DataClass.cs",
@@ -223,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\data\\Task.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\data\\Task.cs",
@@ -235,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\data\\User.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\data\\User.cs",
@@ -243,11 +266,24 @@
               "RelativeToolTip": "FreelanceExchange-web\\data\\User.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAYwBcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T12:56:53.535Z"
+              "WhenOpened": "2025-06-07T12:56:53.535Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Program.cs",
+              "RelativeDocumentMoniker": "FreelanceExchange-web\\Program.cs",
+              "ToolTip": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Program.cs",
+              "RelativeToolTip": "FreelanceExchange-web\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAMwAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:31:41.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\HomeController.cs",
@@ -259,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Profile\\Index.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Profile\\Index.cshtml",
@@ -271,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Models\\UserRole.cs",
@@ -283,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Models\\User.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Models\\User.cs",
@@ -295,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Controllers\\AccountController.cs",
@@ -307,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Models\\ErrorViewModel.cs",
@@ -319,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Home\\Index.cshtml",
@@ -331,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Home\\Privacy.cshtml",
@@ -343,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\_ViewStart.cshtml",
@@ -355,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Account\\Register.cshtml",
@@ -367,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\_ViewImports.cshtml",
@@ -379,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "FreelanceExchange-web.csproj",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\FreelanceExchange-web.csproj",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\FreelanceExchange-web.csproj",
@@ -391,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\FreelanceExchange\\FreelanceExchange_desktop\\FreelanceExchange-web\\FreelanceExchange-web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "FreelanceExchange-web\\Views\\Shared\\_Layout.cshtml",

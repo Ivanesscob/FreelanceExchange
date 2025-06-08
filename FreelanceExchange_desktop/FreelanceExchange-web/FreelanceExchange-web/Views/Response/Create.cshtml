@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Оставить отклик";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">@ViewData["Title"]</h2>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h5>Задание: @ViewBag.Task.Title</h5>
+                        <p>@ViewBag.Task.Description</p>
+                        <p><strong>Бюджет задания:</strong> @ViewBag.Task.Budget ₽</p>
+                    </div>
+
+                    <form asp-action="Create" method="post">
+                        <input type="hidden" name="taskId" value="@ViewBag.Task.Id" />
+                        
+                        <div class="form-group mb-3">
+                            <label for="message">Сообщение</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required 
+                                    placeholder="Опишите, почему вы подходите для этого задания и как планируете его выполнить"></textarea>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="proposedPrice">Предлагаемая стоимость</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="proposedPrice" name="proposedPrice" 
+                                       min="0" step="0.01" required>
+                                <span class="input-group-text">₽</span>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Отправить отклик</button>
+                            <a asp-controller="Task" asp-action="Details" asp-route-id="@ViewBag.Task.Id" 
+                               class="btn btn-outline-secondary">Отмена</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

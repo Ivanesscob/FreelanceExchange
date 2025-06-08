@@ -14,8 +14,10 @@ namespace FreelanceExchange_web.Controllers
                 return RedirectToAction("Login", "Account");
             }
 
+            ViewBag.IsCustomer = DataClass.CurrentUser.Roles.First() == "customer";
+
             // Если пользователь - заказчик, показываем его задания
-            if (DataClass.CurrentUser.Roles.First() == "customer")
+            if (ViewBag.IsCustomer)
             {
                 var userTasks = DataClass.Tasks.Where(t => t.CreatorId == DataClass.CurrentUser.Id).ToList();
                 ViewBag.Tasks = userTasks;
@@ -49,6 +51,13 @@ namespace FreelanceExchange_web.Controllers
         public IActionResult Details(int id)
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(FreelanceExchange_desktop.Data.Task task)
+        {
+            DatabaseCommands.DeleteTaskFromDb(task);
+            return RedirectToAction("Index", "Home");
         }
     }
 } 
