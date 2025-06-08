@@ -57,8 +57,40 @@
     }
     else
     {
-        <div class="alert alert-info">
-            Страница заявок для исполнителей находится в разработке.
-        </div>
+        if (ViewBag.Responses != null && ViewBag.Responses.Count > 0)
+        {
+            <div class="list-group">
+                @foreach (var response in ViewBag.Responses)
+                {
+                    var task = DataClass.Tasks.FirstOrDefault(t => t.Responses.Contains(response));
+                    if (task != null)
+                    {
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1">@task.Title</h5>
+                                    <p class="mb-1">@response.Message</p>
+                                    <small class="text-muted">
+                                        Отклик отправлен: @response.CreatedAt.ToShortDateString() | 
+                                        Предложенная стоимость: @response.ProposedPrice ₽ | 
+                                        Статус задания: @task.GetStatusText()
+                                    </small>
+                                </div>
+                                <div>
+                                    <a asp-controller="Task" asp-action="Details" asp-route-id="@task.Id" 
+                                       class="btn btn-primary">Подробнее о задании</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                У вас пока нет отправленных откликов.
+            </div>
+        }
     }
 </div> 

@@ -18,7 +18,7 @@
                         <h5>Описание</h5>
                         <p>@ViewBag.Task.Description</p>
                     </div>
-
+                    
                     <div class="row mb-4">
                         <div class="col-md-6">
                             <h5>Детали задания</h5>
@@ -26,6 +26,10 @@
                                 <li><strong>Бюджет:</strong> @ViewBag.Task.Budget ₽</li>
                                 <li><strong>Дата создания:</strong> @ViewBag.Task.CreatedAt.ToShortDateString()</li>
                                 <li><strong>Статус:</strong> @ViewBag.Task.GetStatusText()</li>
+                                @if (isTaskOwner)
+                                {
+                                    <li><strong>Количество откликов:</strong> @ViewBag.Task.Responses.Count</li>
+                                }
                             </ul>
                         </div>
                     </div>

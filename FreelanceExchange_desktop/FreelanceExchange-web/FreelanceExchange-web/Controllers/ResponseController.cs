@@ -50,5 +50,12 @@ namespace FreelanceExchange_web.Controllers
             }
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpPost]
+        public IActionResult Delete(int responseId, int taskId)
+        {
+            // TODO: Здесь будет ваша реализация удаления отклика
+            return RedirectToAction("Index", "Home");
+        }
     }
 } 

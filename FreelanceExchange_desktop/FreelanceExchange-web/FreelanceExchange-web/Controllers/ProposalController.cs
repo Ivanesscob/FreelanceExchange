@@ -22,10 +22,14 @@ namespace FreelanceExchange_web.Controllers
                 var userTasks = DataClass.Tasks.Where(t => t.CreatorId == DataClass.CurrentUser.Id).ToList();
                 ViewBag.Tasks = userTasks;
             }
-            // Для исполнителя пока пустая страница
+            // Для исполнителя показываем его отклики
             else
             {
-                ViewBag.Tasks = new List<FreelanceExchange_desktop.Data.Task>();
+                var userResponses = DataClass.Tasks
+                    .SelectMany(t => t.Responses)
+                    .Where(r => r.FreelancerId == DataClass.CurrentUser.Id)
+                    .ToList();
+                ViewBag.Responses = userResponses;
             }
 
             return View();
